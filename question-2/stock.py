@@ -9,8 +9,7 @@ REGION = "us-east-1"
 def get_data():
     return {
         'event_time': datetime.datetime.now().isoformat(),
-        'trader': "MOAH",
-        'ticker': random.choice(["BTC","ETH","BNB", "XRP", "DOGE"]),
+        'ticker': random.choice(["BTC","ETH","BNB", "XRP", "DOGE", "MOAH"]),
         'price': round(random.random() * 100, 2)}
 
 def generate(stream_name, kinesis_client):
