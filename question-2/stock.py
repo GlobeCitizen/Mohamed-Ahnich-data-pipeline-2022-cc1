@@ -4,12 +4,13 @@ import random
 import boto3
 
 STREAM_NAME = "input-stream"
-REGION = "us-north-1"
+REGION = "us-east-1"
 
 def get_data():
     return {
         'event_time': datetime.datetime.now().isoformat(),
-        'ticker': "MOAH",
+        'trader': "MOAH",
+        'ticker': random.choice(["BTC","ETH","BNB", "XRP", "DOGE"]),
         'price': round(random.random() * 100, 2)}
 
 def generate(stream_name, kinesis_client):
