@@ -4,7 +4,7 @@ import random
 import boto3
 
 STREAM_NAME = "Mohamed-Ahnich-stock-input-stream"
-REGION = "us-north-1"
+REGION = "eu-north-1"
 ACCESS_KEY = ""
 SECRET_KEY = ""
 
