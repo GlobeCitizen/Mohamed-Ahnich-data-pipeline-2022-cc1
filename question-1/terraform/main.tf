@@ -7,7 +7,18 @@ resource "aws_instance" "ec2_vm" {
     Etudiant = "ahnich.m@gmail.com"
   }
   
-  vpc_security_group_ids = ["${aws_security_group.default.id}"] 
+  vpc_security_group_ids = ["${aws_security_group.default.id}"]
+
+    provisioner "file" {
+    source      = "~/stock.py"
+    destination = "~/home/ec2-user/stock.py"
+
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      private_key = "${file("~/Downloads/AWS_keys/test.pem")}"
+      host        = "${self.public_dns}"
+    } 
 }
 
 # Default ec2 user is "ec2-user"
