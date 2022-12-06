@@ -1,0 +1,4 @@
+resource "aws_key_pair" "mykey" {
+  key_name   = "mohamed-ahnich-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD38pnImELTYK+5+iyVA6wOYiSBXI+YAJTdsUdECUOe98FBecnd+Ai74zWf6cMYHtn6qfh687U37V5DrC3XIqtYZ/6m/Ic13czn4zbhbS6iY+o3M7VaIXCLklGy9oLNwNGI/2adxlQgGgR4wo9jKzoeirK1hdn/Wkt27UdK6bPFQNBPJwe0OqyuNO6vV8836iwTSAoledlRAaprz57jvBYQvG/uw3W/sb1Bz20q3kPfvoo38rQ1A84lbYQuWp3V5peSoX67RYZ0IHevVVNvzAAF02S6KN9v6y9s0QICnhxqMyZfEtlBpWMjU2FZKUvBc0zYumOxHh3rzH7l5n+WEXbNs+v7OaTQ7q5Vocm7Xq5xvvFyuNmwkr5M/JYCmDpq4Gx/nLkR9t/TcbHk3O0rC6eqU+kLrfB7QpDWCkEQmUr0XUcVb7wOtLu2QuT1Nk/pQPVx8Af9KBuaOpWjWeQ7Hlv97/r3Kq2/vFmZ2JHpncAbkU4V916epduinTdug31ml0U= Mohamed@Deep-Thought"
+}
