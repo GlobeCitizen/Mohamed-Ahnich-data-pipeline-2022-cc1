@@ -8,3 +8,4 @@ https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/
 
 ##  Ec2 screenshot with tag
 
+https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/ec2-instance-with-tag.png
