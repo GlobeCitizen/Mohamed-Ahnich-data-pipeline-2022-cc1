@@ -8,7 +8,21 @@ resource "aws_instance" "ec2_vm" {
     Etudiant = "ahnich.m@gmail.com"
   }
   
+  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
+
+  
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
+
+  provisioner "file" {
+    source      = "~/stock.py"
+    destination = "~/home/ec2-user/stock.py"
+
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      private_key = "${file("~/Downloads/AWS_keys/test.pem")}"
+      host        = "${self.public_dns}"
+    } 
 
     user_data = <<-EOL
     #!/bin/bash
@@ -16,8 +30,10 @@ resource "aws_instance" "ec2_vm" {
     sudo yum install -y python
     sudo yum install -y pip
     sudo pip install boto3
-    sudo python 
+    sudo python stock.py
     EOL
+
+
 
 }
 
