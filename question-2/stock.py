@@ -4,7 +4,7 @@ import random
 import boto3
 
 STREAM_NAME = "Mohamed-Ahnich-stock-input-stream"
-REGION = "us-east-1"
+REGION = "us-north-1"
 
 def get_data():
     return {
