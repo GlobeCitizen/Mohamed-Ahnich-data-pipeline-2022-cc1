@@ -26,4 +26,11 @@ aws kinesis create-stream --shard-count 1 --stream-name Mohamed-Ahnich-stock-inp
 
 https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/data_stream_1_shard.png
 
+Quand on execute le script python pour écrire dans le stream ça ne marche pas
+
+https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/no_credentials.png
+
+C'est normal parce que on a pas de credentials, donc on les ajoutes dans le script.
+
+
 
