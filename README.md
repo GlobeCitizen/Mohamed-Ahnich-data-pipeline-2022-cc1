@@ -13,3 +13,17 @@ https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/
 ## Python script execution
 
 https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/script_result.png
+
+## Kinesis Data Stream
+
+https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/kinesis_data_stream.png
+
+## Kinesis cli
+
+aws kinesis delete-stream --stream-name Mohamed-Ahnich-stock-input-stream
+
+aws kinesis create-stream --shard-count 1 --stream-name Mohamed-Ahnich-stock-input-stream
+
+https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/data_stream_1_shard.png
+
+
