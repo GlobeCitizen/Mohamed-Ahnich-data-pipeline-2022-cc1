@@ -1,5 +1,5 @@
 resource "aws_instance" "ec2_vm" {
-  ami           = "ami-0b8ea3624881b47a1"
+  ami           = "ami-02384a901b5df8024"
   instance_type = "t3.micro"
   key_name      = "mohamed-ahnich-key"
   //tag ec2 instance with Etudiant and email as value
