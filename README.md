@@ -32,5 +32,12 @@ https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/
 
 C'est normal parce que on a pas de credentials, donc on les ajoutes dans le script.
 
+## Question 6
+
+ajout d'une resource aws_kinesis_stream dans main.tf
+
+
+https://github.com/GlobeCitizen/Mohamed-Ahnich-data-pipeline-2022-cc1/blob/main/terraform_kinesis.png
+
 
 
